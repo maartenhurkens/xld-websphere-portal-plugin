@@ -66,7 +66,7 @@ class XmlAccess(object):
         else:
             container = deployed.container.cell
 
-        print "Using settings from " + container + " to register XmlAccess"
+        print "Registering XmlAccess with settings from the following container: " + container.name
 
         return XmlAccess(exec_context, container.portalHost, container.wpHome, container.wpAdminUsername, container.wpAdminPassword, container.wpConfigUrl)
 
